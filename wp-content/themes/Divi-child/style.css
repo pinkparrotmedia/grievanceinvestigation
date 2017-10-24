@@ -117,6 +117,9 @@ h3.lora{
 .et_header_style_left #et-top-navigation nav>ul>li>a, 
 .et_header_style_split #et-top-navigation nav>ul>li>a {
     padding-bottom: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 #logo{
