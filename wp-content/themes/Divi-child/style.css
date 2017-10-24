@@ -1,0 +1,19 @@
+/*
+Theme Name: Divi child theme
+Template: Divi
+*/
+ 
+@import url("../Divi/style.css");
+
+.container{
+	width: 100%;
+	max-width: 1040px;
+}
+
+#main-header{
+	background-color:transparent;
+}
+
+.home .et_pb_fullwidth_header{
+	margin-top: -80px;
+}
