@@ -18,26 +18,47 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('WP_CACHE', true); //Added by WP-Cache Manager
-define( 'WPCACHEHOME', '/var/sites/g/gi.pinkparrotmedia.com/public_html/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
-define('DB_NAME', 'pinkparr_gi');
+if($_SERVER["SERVER_ADDR"]=="127.0.0.1"):
+	// ** MySQL settings - You can get this info from your web host ** //
+	/** The name of the database for WordPress */
+	define('WP_CACHE', true); //Added by WP-Cache Manager
+	//define( 'WPCACHEHOME', '/Application/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
+	define('DB_NAME', 'gi');
+	/** MySQL database username */
+	define('DB_USER', 'root');
 
-/** MySQL database username */
-define('DB_USER', 'pinkparr_gi');
+	/** MySQL database password */
+	define('DB_PASSWORD', '');
 
-/** MySQL database password */
-define('DB_PASSWORD', 'pinkparrot');
+	/** MySQL hostname */
+	define('DB_HOST', 'localhost');
 
-/** MySQL hostname */
-define('DB_HOST', '10.169.0.157');
+	/** Database Charset to use in creating database tables. */
+	define('DB_CHARSET', 'utf8');
 
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+	/** The Database Collate type. Don't change this if in doubt. */
+	define('DB_COLLATE', '');
+else:
+	// ** MySQL settings - You can get this info from your web host ** //
+	/** The name of the database for WordPress */
+	define('WP_CACHE', true); //Added by WP-Cache Manager
+	define( 'WPCACHEHOME', '/var/sites/g/gi.pinkparrotmedia.com/public_html/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
+	define('DB_NAME', 'pinkparr_gi');
+	/** MySQL database username */
+	define('DB_USER', 'pinkparr_gi');
 
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+	/** MySQL database password */
+	define('DB_PASSWORD', 'pinkparrot');
+
+	/** MySQL hostname */
+	define('DB_HOST', '10.169.0.157');
+
+	/** Database Charset to use in creating database tables. */
+	define('DB_CHARSET', 'utf8');
+
+	/** The Database Collate type. Don't change this if in doubt. */
+	define('DB_COLLATE', '');
+endif;
 
 /**#@+
  * Authentication Unique Keys and Salts.
