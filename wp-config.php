@@ -38,6 +38,10 @@ if($_SERVER["SERVER_ADDR"]=="127.0.0.1"):
 
 	/** The Database Collate type. Don't change this if in doubt. */
 	define('DB_COLLATE', '');
+
+	define('WP_HOME',"http://gipinkparrotmedia.local/");
+	define('WP_SITEURL',"http://gipinkparrotmedia.local/");
+
 else:
 	// ** MySQL settings - You can get this info from your web host ** //
 	/** The name of the database for WordPress */
@@ -58,6 +62,10 @@ else:
 
 	/** The Database Collate type. Don't change this if in doubt. */
 	define('DB_COLLATE', '');
+
+	define('WP_HOME',"http://gi.pinkparrotmedia.com/");
+	define('WP_SITEURL',"http://gi.pinkparrotmedia.com/");
+	
 endif;
 
 /**#@+

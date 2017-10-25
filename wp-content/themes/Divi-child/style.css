@@ -14,6 +14,10 @@ h1{
 	font-size: 40px;
 	font-family: 'Lora', serif;
 }
+h2{
+	font-size: 26px;
+	font-family: 'Lora', serif;
+}
 h3{
 	font-size: 24px;
 	font-family: 'Roboto', sans-serif;
@@ -23,8 +27,13 @@ h3.lora{
 	font-family: 'Lora', serif;
 }
 
+
+
 .et_pb_fullwidth_header h1, 
 .et_pb_fullwidth_header p{
+	color:#fff;
+}
+.et_pb_fullwidth_header h2{
 	color:#fff;
 }
 .et_pb_fullwidth_header p{
@@ -33,6 +42,9 @@ h3.lora{
 }
 .et_pb_fullwidth_header_container{
 	padding: 100px 20px 0px 20px;
+}
+.section-global-header .et_pb_fullwidth_header_container{
+	padding-top: 60px;
 }
 
 .et_pb_fullwidth_header .button-primary{
@@ -91,14 +103,21 @@ h3.lora{
 
 #main-header{
 	background-color:transparent;
-
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
 }
 
+.page #main-header{
+	background:#2e4168;
+	padding-bottom: 20px;
+}
+.home #main-header{
+	background: transparent;
+}
+
 .home .et_pb_fullwidth_header{
-	margin-top: -57px;
+	margin-top: -80px;
 }
 
 #et-top-navigation{
@@ -153,10 +172,17 @@ h3.lora{
 	font-weight: 400;
 	margin-top: 10px;
 }
-.section-contact-form h3.roboto-bold{
+h3.roboto-bold{
 	font-weight: 700;
 	color:#2f4366;
 }
+.page-title{
+	text-align: center;
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 20px;
+	display: block;
+}
+
 .wpcf7 .et_pb_row{
 	padding-left: 0px;
 	padding-bottom: 0px;
@@ -280,10 +306,172 @@ div.wpcf7 .ajax-loader{
 	font-size: 12px
 }
 
+.et_pb_toggle{
+	padding: 0px;
+	border:none;
+	background: none;
+}
+.et_pb_toggle_content {
+    background: #fafafa;
+    border-top: 1px solid #e6e6e6;
+    padding: 72px 42px;
+    margin-top: 30px;
+}
+.et_pb_toggle_title{
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Lora', serif;
+	color:#2f4366 !important;
+	border-top: 1px solid #e6e6e6;
+	padding-top: 24px !important;
+}
+.et_pb_toggle_title:before{
+	content:" ";
+}
+.div-benefits-container{
+	border:1px solid #e6e6e6;
+	padding: 45px 40px !important;
+	margin-bottom: 75px;
+}
+.div-benefits-container ul li{
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	margin-bottom: 4px;
+
+}
+.div-benefits-container ul li:before{
+	content : url("/wp-content/themes/Divi-child/assets/bullet.png");
+	padding-right: 17px;
+}
+
+
+.tbl{
+	display: table;
+	width: 100%;
+}
+.tbl-row{
+	display: table-row;
+}
+.tbl-cell{
+	display: table-cell;
+}
+
+.tbl-pricing-list .cell-package{
+	width: 240px;
+	text-align: center;
+	font-size: 31px;
+	font-family: 'Lora', serif;
+	position: relative;
+}
+.tbl-pricing-list .cell-package:after{
+	content: " ";
+	position: absolute;
+	right: 0px;
+	width: 1px;
+	height: 146px;
+	background: #e6e6e6;
+	top: 25%;
+}
+.tbl-pricing-list .tbl-cell{
+	vertical-align: middle;
+	height: 270px;
+}
+.tbl-pricing-list .tbl-row .tbl-cell{
+	border-bottom: 1px solid #e6e6e6;
+}
+.tbl-pricing-list .cell-package-description{
+	padding-left: 90px;
+}
+.tbl-pricing-list .price{
+	font-size: 18px;
+	font-family: 'Lora', serif;
+	font-style: italic;
+	margin-top: 27px;
+}
+.tbl-pricing-list .plus-expenses{
+	font-size: 14px;
+	font-family: 'Lora', serif;
+	font-style: italic;
+}
+
+
+
+.how-it-works-accordions .et_pb_toggle_title{
+	text-align: left;
+	color:#464646 !important;
+	font-family: 'Lora', serif;
+	font-size: 14px;
+	border:none;
+	line-height: 22px;
+	padding-left:36px !important;
+	padding-top: 0px !important;
+}
+.how-it-works-accordions .et_pb_toggle:before{
+	font-size: 31px;
+	color:#2f4366;
+	position: absolute;
+	left: 0px;
+	font-family: 'Lora', serif;
+	top:6px;
+}
+.how-it-works-accordions .et_pb_accordion_item_0:before{ content: "1"; }
+.how-it-works-accordions .et_pb_accordion_item_1:before{ content: "2"; }
+.how-it-works-accordions .et_pb_accordion_item_2:before{ content: "3"; }
+.how-it-works-accordions .et_pb_accordion_item_3:before{ content: "4"; }
+.how-it-works-accordions .et_pb_accordion_item_4:before{ content: "5"; }
+.how-it-works-accordions .et_pb_accordion_item_5:before{ content: "6"; }
+.how-it-works-accordions .et_pb_accordion_item_6:before{ content: "7"; }
+.how-it-works-accordions .et_pb_accordion_item_7:before{ content: "8"; }
+.how-it-works-accordions .et_pb_accordion_item_8:before{ content: "9"; }
+.how-it-works-accordions .et_pb_accordion_item_9:before{ content: "10"; }
+.how-it-works-accordions .et_pb_accordion_item_10:before{ content: "11"; }
+.how-it-works-accordions .et_pb_accordion_item_11:before{ content: "12"; }
+
+
+.how-it-works-accordions .et_pb_toggle{
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 40px;
+}
+.how-it-works-accordions .et_pb_toggle_content{
+	border:none !important;
+	background: none !important;
+}
+
+.how-it-works-toggle-content{
+	border: 1px solid #e6e6e6;
+	color:#464646;
+	padding: 18px 30px;
+}
+
+.how-it-works-accordions  .et_pb_toggle_content {
+    padding: 11px 42px;
+}
+
+.banner-pricing .tbl-cell{
+	vertical-align: middle;
+}
+.banner-pricing{
+	padding: 38px 70px;
+}
+.banner-pricing .btn-green {
+    width: 197px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 13px;
+}
+.banner-pricing h3{
+	color: #fff;
+	line-height: 27px;
+}
+.banner-pricing .cell-text{
+	padding-left: 40px;
+}
 
 @media only screen and (max-width: 414px)  {
 	.home .et_pb_fullwidth_header{
-		margin-top: -80px;
+		margin-top: -85px;
 	}
 	.et_menu_container{
 		margin-top: -15px;
@@ -344,4 +532,70 @@ div.wpcf7 .ajax-loader{
 		clear: both;
 		text-align: center;
 	}
+	.et_pb_toggle_title{
+		padding-right: 0px !important;		
+		padding-left: 0px !important;
+	}
+	.et_mobile_menu{
+		top: 100px;
+	}
+	h3.roboto-bold{
+		text-align: center !important;
+	}
+
+	.about-us-text{
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.tbl, .tbl-row, .tbl-cell{
+		display: block !important;
+		text-align: center !important;
+	}
+	.tbl-pricing-list .tbl-cell{
+		padding: 0px !important;
+	}
+	.tbl-pricing-list .cell-package:after{
+		content: " " !important;
+		display: none !important;
+	}
+	.tbl-pricing-list .cell-package{
+		width: 100% !important;
+		height: 100px;
+		padding-top: 37px !important;
+	}
+	.tbl-pricing-list{
+		padding-right: 20px !important;
+		padding-left: 20px !important;
+	}
+	.tbl-pricing-list .package-description{
+		padding-top: 37px !important;
+	}
+
+	.how-it-works-accordions .et_pb_toggle_title {
+	    margin-left: 43px !important;
+	    margin-right: 40px !important;
+	    padding-left: 0px !important;
+	}
+	.how-it-works-accordions .et_pb_toggle:before {
+	    left: 9px;
+	    top: 21px;
+	}
+
+	.page-id-42 .et_pb_code_1{
+		padding: 0px 20px;
+		text-align: center;
+	}
+
+	.banner-pricing{
+		padding: 0px;
+	}
+	.banner-pricing h3{
+		font-size: 16px !important;
+	}
+	.banner-pricing .cell-text{
+		padding-left: 0px !important;
+		padding-top: 20px;
+	}
+
 }
