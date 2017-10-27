@@ -10,6 +10,14 @@ body{
 	font-size: 14px;
 	font-weight: 300;
 }
+
+input[type=text],textarea,input[type=email]{
+   font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+
 h1{
 	font-size: 40px;
 	font-family: 'Lora', serif;
